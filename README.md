@@ -57,15 +57,15 @@ type cisco_ios
 url file:////etc/puppetlabs/puppet/devices/cisco.example.com.conf`
 ```
 
-The credentials file must contain a hash that matches the schema defined in [lib/puppet/transport/schema/cisco_ios.rb](lib/puppet/transport/schema/cisco_ios.rb) for example:
+The credentials file must contain a hash in JSON format that matches the schema defined in [lib/puppet/transport/schema/cisco_ios.rb](lib/puppet/transport/schema/cisco_ios.rb) for example:
 
-```puppet
+```json
 {
-  host            => '10.0.0.246',
-  port            => 22,
-  user            => 'admin',
-  password        => 'password',
-  enable_password => 'password',
+  "host":            "10.0.0.246",
+  "port":            22,
+  "user":            "admin",
+  "password":        "password",
+  "enable_password": "password"
 }
 ```
 
